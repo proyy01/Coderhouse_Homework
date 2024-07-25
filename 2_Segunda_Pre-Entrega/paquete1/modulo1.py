@@ -62,5 +62,3 @@ def menu():
             break
         else:
             print("No has seleccionado una opción, intente de nuevo.")
-
-menu()

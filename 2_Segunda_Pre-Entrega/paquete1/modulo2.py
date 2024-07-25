@@ -1,15 +1,18 @@
 class Cliente:
-    def __init__(self, nombre, contraseña, dirección, lista_de_compras):
+    def __init__(self, nombre, fecha_de_nacimiento, dirección, teléfono):
         self.nombre = nombre
-        self.__contraseña = contraseña
+        self.fecha_de_nacimiento = fecha_de_nacimiento
         self.dirección = dirección
-        self.lista_de_compras = lista_de_compras
-
+        self.teléfono = teléfono
+    
         def agregar(self): #Agregar Carrito
-            print("Se ha agregado el artículo al carrito de compras.")
+            artículo = input("Indique el producto que desee agregar:")
+            print(f"Se ha agregado {artículo} al carrito de compras.")
 
         def pagar(self): #Pagar
             print("Se han pagado los artículos dentro del carrito de compras.")
 
         def __str__(self):
-            return f"{self.nombre}, {self.__contraseña}, {self.dirección}, {self.lista_de_compras}"
+            return f"Nombre:{self.nombre}, Fecha de nacimiento:{self.fecha_de_nacimiento}, Dirección:{self.dirección}, Teléfono:{self.teléfono}"
+        
+cliente = Cliente("Lord Baldomero", "Escuela Taradowarts", "+56 9 1234 5678", "Cartas de magia")

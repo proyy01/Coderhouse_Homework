@@ -6,4 +6,5 @@ from paquete1 import modulo1, modulo2
 
 # Darle acciones al objeto
 
+
 # Podemos manejar todo lo anterior en un menu
